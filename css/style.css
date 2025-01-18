@@ -1,7 +1,12 @@
-body {
-    background-color:hsl(220, 61%, 55%);
-    font-family: Verdana, Arial, Tahoma, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+body { 
+    background: linear-gradient(180deg, #9DBEFF 0%, #FFE8D4 100%);
+    font-family: "Bricolage Grotesque", Arial, Tahoma, sans-serif;
     font-size: 16px;
+}
+header {
+    background-color:linear-gradient(180deg, #9DBEFF 0%, #FFE8D4 100%);
 }
 h1 {
     font-size: 48px;
@@ -42,13 +47,7 @@ nav a:hover {
 section {
    padding: 100px; 
 }
-#about-me, #education {
-    background-color: white;
-}
 
-#projects, #contact {
-    background-color: #eeeef7;
-}
 .informations {
     display: flex;
     justify-content: center;
@@ -58,30 +57,41 @@ section {
     height: 250px;
     width: 250px;
     border-radius : 50%;
-    border: #fcc01a, 2px, solid;
+    border: #9DBEFF, 2px, solid;
     object-fit : cover;
     margin-right: 80px; 
     margin-bottom: 100px;
 }
-.name,.city {
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
     color: #190f33;
 }
-.name {
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
+.statut {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #190f33;
+}   
 .city {
 font-size: 30px;
-font-style: italic;
+color: #190f33;
+}
+.description {
+    background-color: #FFE8D4;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+
 }
 h2,h3 {
     color:#190f33; 
     font-weight: bold;  
 }
 h3 {
-font-size: 26px; 
+font-size: 35px; 
 margin-bottom: 40px; 
+text-align: center;
 }
 h2{
     font-size: 30px;
@@ -134,6 +144,6 @@ footer {
     flex-direction: column;
 }
 footer p {
-color: white;
+color:  #9DBEFF;
 line-height: 40px;
 }
