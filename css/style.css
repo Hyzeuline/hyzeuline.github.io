@@ -3,6 +3,7 @@
 body {
     background: linear-gradient(180deg, #9DBEFF 0%, #FFE8D4 100%);
     font-family: "Bricolage Grotesque", Arial, Tahoma, sans-serif;
+    padding-inline: 2rem;
 }
 
 @keyframes gradient {
@@ -21,6 +22,11 @@ header {
     background-color: linear-gradient(180deg, #9DBEFF 0%, #FFE8D4 100%);
     text-align: center;
     padding: 2rem;
+    svg {
+        box-sizing: border-box;
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
 }
 
 h1 {
@@ -51,15 +57,19 @@ main {
     max-width: 64rem;
     width: 100%;
     background-color: white;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     border-radius: 1.25rem;
 }
 
 nav {
-    height: 6.25rem;
     display: flex;
     gap: 1rem;
     padding: 1rem 2rem;
+}
+@media (max-width: 44rem) {
+    nav {
+        flex-direction: column;
+    }
 }
 
 nav a {
@@ -68,6 +78,7 @@ nav a {
     justify-content: center;
     align-items: center;
     color: #190f33;
+    padding: 1rem;
     font-size: 1.5rem;
     text-decoration: none;
     border-radius: 3rem;
@@ -104,6 +115,18 @@ section {
     margin-right: 5rem;
     margin-bottom: 6.25rem;
 }
+@media (max-width: 54rem) {
+    .informations {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .informations img {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+}
+
 
 .name {
     font-size: 2.5rem;
@@ -113,7 +136,8 @@ section {
 }
 
 .statut {
-    font-size: 2.1875rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
     margin-bottom: 2.5rem;
     color: #190f33;
 }
@@ -176,8 +200,13 @@ h3 {
 
 .project {
     display: flex;
-    flex-direction: row;
     gap: 2rem;
+}
+
+@media (max-width: 54rem) {
+    .project {
+        flex-direction: column;
+    }
 }
 
 .logo {
@@ -214,6 +243,7 @@ h3 {
     flex-shrink: 0;
     height: 12.5rem;
     width: 18.125rem;
+    max-width: 100%;
 }
 
 #contact div {
